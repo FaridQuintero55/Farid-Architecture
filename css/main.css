@@ -31,6 +31,13 @@ footer{
   padding: 0 0 0 0;
 }
 
+#Sobremi{
+  background: #f1f1f1;
+  margin-top: 20px;
+  padding-top: 20px;
+
+}
+
 #Plancha {
  box-shadow: 5px 5px 10px grey;
 }
