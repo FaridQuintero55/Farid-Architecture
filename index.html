@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=2592000, public" />
+    <IfModule mod_headers.c>
+        # WEEK
+      <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=604800, public"
+      </FilesMatch>
+
+        # WEEK
+      <FilesMatch "\.(js|css|swf)$">
+        Header set Cache-Control "max-age=604800"
+      </FilesMatch>
+    </IfModule>
 
     <link rel="icon" href="img/Logo.png">
 
